@@ -59,10 +59,17 @@ function getLastWiningBoardAndLastDrawnNumber(drawnNumbers, boards) {
   return output[0]; // last one to win (because I used unshift)
 }
 
-(function start() {
+function start() {
   let [drawnNumbers, boards] = getDrawnNumbersAndBoards(fileContent);
   const [winingBoard, winingNumber] = getLastWiningBoardAndLastDrawnNumber(drawnNumbers, boards);
   let sum = winingBoard.reduce((sum, line) =>
     (line.reduce((accu, nb) => !nb.marked ? (accu + nb.value) : accu, 0) + sum), 0);
   console.log(sum * winingNumber); //31892
+}
+
+(() => {
+  const d1 = new Date();
+  start();
+  const end = new Date() - d1
+  console.info('Execution time: %dms', end)
 })();
