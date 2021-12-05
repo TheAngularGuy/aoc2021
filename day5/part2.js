@@ -24,4 +24,10 @@ function start(list) {
   });
   console.log(sum);
 }
-start(linesCoord); // 19081
+
+(() => {
+  const d1 = new Date();
+  start(linesCoord); // 19081
+  const end = new Date() - d1
+  console.info('Execution time: %dms', end)
+})();
