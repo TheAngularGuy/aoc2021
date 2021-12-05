@@ -28,6 +28,6 @@ function start(list) {
 (() => {
   const d1 = new Date();
   start(linesCoord); // 19081
-  const end = new Date() - d1
-  console.info('Execution time: %dms', end)
+  const end = new Date() - d1;
+  console.info('Execution time: %dms', end);
 })();

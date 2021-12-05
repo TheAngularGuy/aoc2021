@@ -29,6 +29,6 @@ function start(list) {
 (() => {
   const d1 = new Date();
   start(filteredLinesCoord); // 6666
-  const end = new Date() - d1
-  console.info('Execution time: %dms', end)
+  const end = new Date() - d1;
+  console.info('Execution time: %dms', end);
 })();

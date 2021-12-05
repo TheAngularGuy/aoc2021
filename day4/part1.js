@@ -66,7 +66,7 @@ function start() {
 (() => {
   const d1 = new Date();
   start();
-  const end = new Date() - d1
-  console.info('Execution time: %dms', end)
+  const end = new Date() - d1;
+  console.info('Execution time: %dms', end);
 })();
 
