@@ -19,9 +19,7 @@ function start(list) {
         sum += i;
       }
     });
-    if (bestSum !== null && sum > bestSum) {
-      break;
-    }
+    if (bestSum !== null && sum > bestSum) break;
     bestSum = bestSum === null ? sum : Math.min(sum, bestSum);
     map.set(pos, sum);
   }
