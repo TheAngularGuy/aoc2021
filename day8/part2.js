@@ -20,7 +20,7 @@ function getNumFromPossibility(possibility, num) {
   if (num.length === 3) return 7;
   if (num.length === 6 && !num.includes(middle)) return 0;
   if (num.length === 6 && num.includes(topRight) && num.includes(middle)) return 9;
-  if (num.length === 6 && num.includes(bottomLeft) && num.includes(middle)) return 6
+  if (num.length === 6 && num.includes(bottomLeft) && num.includes(middle)) return 6;
   if (num.length === 5 && num.includes(topRight) && num.includes(bottomRight)) return 3;
   if (num.length === 5 && !num.includes(topRight) && !num.includes(bottomLeft)) return 5;
   if (num.length === 5 && !num.includes(topLeft) && !num.includes(bottomRight)) return 2;
